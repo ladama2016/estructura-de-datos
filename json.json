@@ -1,4 +1,14 @@
 {
+    "menu":
+        {
+            
+            "3": "Inicio",
+            "2": "Sobre Nosotros",
+            "1": "Ubicacion",
+            "0": "Accede a tu Cuenta"
+        },
+    
+    
     "sub_menu":
         {
             
