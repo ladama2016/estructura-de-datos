@@ -5,15 +5,11 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     text-decoration:none;
-    
 }
 
 body
 {
-    background: azure;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #ffff;
     
 }
 
@@ -21,47 +17,128 @@ h1
 {
     font-family: 'Open sans';
     font-size: 60px;
-    margin: 60px auto;
+    margin: 20px auto;
     text-align: center;
 }
 
 h2
 {
     font-family: 'Open sans';
-    font-size: 40px;
+    font-size: 50px;
     margin: 20px auto;
     text-align: center;
 }
 
-.text
+h3
 {
-    width:1000px;
     font-family: 'Open sans';
     font-size: 40px;
-    margin-top: 100px;
+    margin: 30px auto;
     text-align: center;
-   
-
 }
 
-.button
+h4
 {
-    width:500px;
-    margin: 10px 0px;
-    padding: 20px;
-    background :gray;
-    color:#fff;
-    text-align: center;
     font-family: 'Open sans';
     font-size: 30px;
+    margin: 30px auto;
+    text-align: center;
 }
 
-.respuesta
+p
 {
     font-family: 'Open sans';
-    font-size: 40px;
-    margin: 50px auto;
+    font-size: 25px;
+    margin: 10px auto;
     text-align: center;
-    color:black;
+}
 
+.btn
+{
+    font-size: 25px;
+
+}
+
+img
+{
+    width: 100px;
+}
+
+.mini
+{
+    width: 2080px;
+    margin-bottom: 40px;
+    background: #4da5ff;
+    text-align: center;
+
+    
+}
+
+.mini,.sub-mini1,.sub-mini2,.sub-mini3
+{
+    list-style:none;
+    text-decoration:none;
+}
+
+.menu-mini > li
+{
+    position: relative;
+    display: inline-block;
+}
+
+.menu-mini > li > a 
+{
+    display: block;
+    padding: 20px 40px;
+    color: black;
+    font-family: 'Open sans';
+    font-size: 25px;
+    
+}
+
+.menu-mini li a:hover
+{
+    color: gold;
+    transition: all .3s;
+    display:block;
+
+}
+
+.sub-mini1,.sub-mini2,.sub-mini3
+{
+    position:  absolute;
+    font-family: 'Open sans';
+    font-size: 15px;
+    background-color: #007FFF;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.sub-menu1,.sub-menu2,.sub-menu3
+{
+    position:  absolute;
+    font-family: 'Open sans';
+    font-size: 15px;
+    background-color: #007FFF;
+    width: 200%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.sub-mini1 li a ,.sub-mini2 li a,.sub-mini3 li a
+{
+    display: block;
+    
+    padding: 15px;
+    color: white;
+}
+
+.menu-mini li:hover .sub-mini1,.menu-mini li:hover .sub-mini2,.menu-mini li:hover .sub-mini3
+{
+    visibility: visible;
+    opacity: 2;
+    z-index: 100;
 }
