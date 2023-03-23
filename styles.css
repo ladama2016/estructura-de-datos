@@ -78,7 +78,7 @@ img
     text-decoration:none;
 }
 
-.menu-mini > li
+.menu-mini li
 {
     position: relative;
     display: inline-block;
@@ -87,11 +87,19 @@ img
 .menu-mini > li
 {
     display: relative;
-    padding: 30px 40px;
+    padding: 20px 40px;
     color: black;
     font-family: 'Open sans';
     font-size: 25px;
     
+}
+
+.menu-mini li:hover
+{
+    color: gold;
+    transition: all .3s;
+    display:relative;
+
 }
 
 .sub-mini0,.sub-mini2,.sub-mini3
@@ -106,22 +114,17 @@ img
     transition: opacity 1s;
 }
 
-.sub-menu0,.sub-menu2,.sub-menu3
-{
-    position:  absolute;
-    font-family: 'Open sans';
-    font-size: 15px;
-    background-color: #007FFF;
-    width: 200%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.sub-mini0 li a ,.sub-mini2 li a,.sub-mini3 li a
+.sub-mini0 li,.sub-mini2 li,.sub-mini3 li
 {
     display: block;
     
     padding: 15px;
     color: white;
+}
+
+.menu-mini li:hover .sub-mini0,.menu-mini li:hover .sub-mini2,.menu-mini li:hover .sub-mini3
+{
+    visibility: visible;
+    opacity: 2;
+    z-index: 100;
 }

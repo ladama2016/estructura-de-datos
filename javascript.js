@@ -12,7 +12,7 @@ fetch(`json.json`)
                 
                 let menu = document.createElement("li")
                 let a= document.createElement("a")
-                a.setAttribute("href","http://www.google.es");
+                a.setAttribute("href","https://www.banreservas.com/");
                 let texto = document.createTextNode(''+data.menu[k])
                 let sub = document.createElement("ul")
                 sub.classList.add("sub-mini"+i);
