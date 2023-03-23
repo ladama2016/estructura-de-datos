@@ -9,25 +9,18 @@ fetch(`json.json`)
         {
             let k=ks[i];
 
-            let menu = document.createElement('li')
-                let ref= document.createElement('a')
-                let texto = document.createTextNode(''+data.menu[k])
-                menu.appendChild(ref);
-                menu.appendChild(texto);
-
-            if(i==3 ||i==2||i==0)
-            {
-                let sub = document.createElement('ul')
-                sub.classList.add("sub-mini"+i);
-                menu.appendChild(sub);
                 
-            }
-
-            else 
-            {
-
-            }
-
+                let menu = document.createElement("li")
+                let a= document.createElement("a")
+                a.setAttribute("href","http://www.google.es");
+                let texto = document.createTextNode(''+data.menu[k])
+                let sub = document.createElement("ul")
+                sub.classList.add("sub-mini"+i);
+                
+                menu.appendChild(a);
+                menu.appendChild(texto);
+                menu.appendChild(sub);
+            
             document.getElementsByClassName('menu-mini')[0].appendChild(menu);
 
         }

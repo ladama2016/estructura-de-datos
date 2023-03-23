@@ -84,22 +84,14 @@ img
     display: inline-block;
 }
 
-.menu-mini > li > a 
+.menu-mini > li
 {
-    display: block;
-    padding: 20px 40px;
+    display: relative;
+    padding: 30px 40px;
     color: black;
     font-family: 'Open sans';
     font-size: 25px;
     
-}
-
-.menu-mini li a:hover
-{
-    color: gold;
-    transition: all .3s;
-    display:block;
-
 }
 
 .sub-mini0,.sub-mini2,.sub-mini3
@@ -132,11 +124,4 @@ img
     
     padding: 15px;
     color: white;
-}
-
-.menu-mini li:hover .sub-mini0,.menu-mini li:hover .sub-mini2,.menu-mini li:hover .sub-mini3
-{
-    visibility: visible;
-    opacity: 2;
-    z-index: 100;
 }
