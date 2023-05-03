@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+ 
+</head>
+<body>
+    <div class="cuadro">
+        
+        <h1>Formulario con Gráfico de Barras</h1>
+        <h2>Ventas del ultimo año</h2>
+        <form class="formulario" id="formulario">
+            
+            <label for="bar_value">Enero</label>
+            <input type="number" id="bar_value1">
+            <label for="bar_value">Febrero</label>
+            <input type="number" id="bar_value2">
+            <label for="bar_value">Marzo</label>
+            <input type="number" id="bar_value3">
+            <label for="bar_value">Abril</label>
+            <input type="number" id="bar_value4"> 
+            <label for="bar_value">Mayo</label>
+            <input type="number" id="bar_value5">
+            <label for="bar_value">Junio</label>
+            <input type="number" id="bar_value6"> 
+            <label for="bar_value">Julio</label>
+            <input type="number" id="bar_value7">
+            <label for="bar_value">Agosto</label>
+            <input type="number" id="bar_value8"> 
+            <label for="bar_value">Septiembre</label>
+            <input type="number" id="bar_value9">
+            <label for="bar_value">Octubre</label>
+            <input type="number" id="bar_value10"> 
+            <label for="bar_value">Noviembre</label>
+            <input type="number" id="bar_value11">
+            <label for="bar_value">Diciembre</label>
+            <input type="number" id="bar_value12"> 
+
+            <button type="submit">Crear Gráfico de Barras</button>
+
+        </form>
+
+        <div>
+            <canvas id="grafico" class="grafico" width="500" height="100"></canvas>
+            <script src="grafico.js"></script>
+        </div>
+        
+
+    </div>
+
+
+    
+        
+
+</body>
+    
