@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>contactos</title>
+</head>
+<body>
+    <div class="cuadro">
+        <header>Registro de Nuevo Contacto</header>
+
+        <div class="formulario">
+            <form action="#">
+            
+                <div class="pagina">
+                    <div class="titulo">Datos Personales</div>
+                    
+                    <div class="campo">
+                        <div class="label">Nombre : </div>
+                        <input type="text" id="nombre" placeholder="Lorenny">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Apellido : </div>
+                        <input type="text" id="last" placeholder="Ruiz">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Compañia :</div>
+                        <input type="text" id="compañia" placeholder="claro">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Telefono :</div>
+                        <input type="text" id="telefono" placeholder="809-xxx-xxx">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Etiqueta : </div>
+                        <select id="etiqueta_t">
+                            <option valor="0" disabled selected>Escoge una opcion</option>
+                            <option value="PHONE">Celular</option>
+                            <option value="WORK">Trabajo</option>
+                            <option value="HOME">Casa</option>
+                            <option value="MAIN">Principal</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">E-mail : </div>
+                        <input type="text" id="email" placeholder="lalorenx@hotmail.com">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Etiqueta : </div>
+                        <select id="etiqueta_h">
+                            <option valor="0" disabled selected>Escoge una opcion</option>
+                            <option value="HOME">Casa</option>
+                            <option value="WORK">Trabajo</option>
+                            <option value="OTHER">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Fecha importante :</div>
+                        <input type="date" id="fecha" max="2024-03-04" value ="2023-04-13">
+                    </div>
+
+                    <div id="qr">
+                    </div>
+
+                    <div class="campo button">
+                        <button class="borrar">Borrar</button>
+                        <button class="enviar">Enviar</button>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="javascript.js"></script>
+
+        </form>

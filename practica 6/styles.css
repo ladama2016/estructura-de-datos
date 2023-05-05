@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style-type: none;
+}
+
+body
+{
+    background-image: url("image.jpg");
+    background-repeat: repeat-x;
+    background-position: right-center;
+    
+}
+
+h1
+{
+    font-family: 'Open sans';
+    font-size: 60px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2
+{
+    font-family: 'Open sans';
+    font-size: 50px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h3
+{
+    font-family: 'Open sans';
+    font-size: 40px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h4
+{
+    font-family: 'Open sans';
+    font-size: 30px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+p
+{
+    font-family: 'Open sans';
+    font-size: 25px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.btn
+{
+    font-size: 25px;
+
+}
+
+img
+{
+    width: 100px;
+}
+
+.mini
+{
+    width: 2080px;
+    margin-bottom: 40px;
+    background: #4da5ff;
+    text-align: center;
+
+    
+}
+
+.mini
+{
+    list-style:none;
+    text-decoration:none;
+}
+
+
+.menu-mini > li
+{
+    position: relative;
+    display: inline-block;
+}
+
+.menu-mini > li > a 
+{
+    display: block;
+    padding: 20px 40px;
+    color: black;
+    font-family: 'Open sans';
+    font-size: 25px;
+    
+}
+
+.menu-mini li a:hover
+{
+    color: gold;
+    transition: all .3s;
+    display:block;
+
+}
+
+.sub-mini
+{
+    position:  absolute;
+    font-family: 'Open sans';
+    font-size: 15px;
+    background-color: #007FFF;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.sub-mini li a ,.sub-menu li a
+{
+    display: block;
+    
+    padding: 15px;
+    color: white;
+}
+
+.menu-mini li:hover .sub-mini
+{
+    visibility: visible;
+    opacity: 2;
+    z-index: 100;
+}

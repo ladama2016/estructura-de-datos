@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>formulario</title>
+</head>
+<body>
+    <div class="cuadro">
+        <header>Registro de Nuevo Usuario</header>
+
+        <div class="bar">
+            
+            <div class="paso">
+                <p>Datos</p>
+                <div class="num">
+                    <span>1</span>
+                </div>
+                <div class ="check  ​fa-li fa fa-check-square"></div>
+            </div>
+
+            <div class="paso">
+                <p>Familiares</p>
+                <div class="num">
+                    <span>2</span>
+                </div>
+                <div class ="check ​fa-li fa fa-check-square"></div>
+            </div>
+
+            <div class="paso">
+                <p>Condiciones</p>
+                <div class="num">
+                    <span>3</span>
+                </div>
+                <div class ="check ​fa-li fa fa-check-square"></div>
+            </div>
+
+            <div class="paso">
+                <p>Internamientos</p>
+                <div class="num">
+                    <span>4</span>
+                </div>
+                <div class ="check ​fa-li fa fa-check-square"></div>
+            </div>
+
+            <div class="paso">
+                <p>Registro</p>
+                <div class="num">
+                    <span>5</span>
+                </div>
+                <div class ="check  ​fa-li fa fa-check-square"></div>
+            </div>
+
+        </div>
+
+        <div class="form">
+            <form action="#">
+            
+                <div class="pagina move">
+                    <div class="titulo">Datos Personales</div>
+                    
+                    <div class="campo">
+                        <div class="label">Nombre : </div>
+                        <input type="text" id="nombre" placeholder="nombre">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Primer Apellido : </div>
+                        <input type="text" id="first" placeholder="primer apellido">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Segundo apellido : </div>
+                        <input type="text" id="second" placeholder="segundo">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Sexo : </div>
+                        <select id="sexo">
+                            <option valor="0" disabled selected>Escoge una opcion</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Edad :</div>
+                        <input type="text" id="edad" placeholder="edad">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Fecha de Nacimiento :</div>
+                        <input type="date" id="fecha" max="2024-03-04" value ="2023-03-01">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Tipo de sangre : </div>
+                        <input type="text" id="tipo" placeholder="tipo de sangre">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Telefono : </div>
+                        <input type="text" id="telefono" placeholder="telefono">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Direccion : </div>
+                        <input type="text" id="direccion" placeholder="direccion">
+                    </div>
+                   
+                    <div class="campo button">
+                        <button class="siguiente-2 siguiente">Siguiente</button>
+                    </div>
+
+                </div>
+
+                <div class="pagina move">
+                    <div class="titulo">Familiares</div>
+                    
+                    <div class="campo">
+                        <div class="label">Nombre del familiar : </div>
+                        <input type="text" id="nombre_f" placeholder="nombre de familiar">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Primer Apellido del familiar : </div>
+                        <input type="" id="first_f" placeholder="apellido de familiar">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Segundo Apellido del familiar : </div>
+                        <input type="text" id="second_f" placeholder="segundo apellido de familiar">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">parentesco familiar : </div>
+                        <input type="text" id="parestesco_f" placeholder="paresteco">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Sexo del familiar : </div>
+                        <select id="sexo_f">
+                            <option valor="0" disabled selected>Escoge una opcion</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Edad del familiar : </div>
+                        <input type="text" id="edad_f" placeholder="edad">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Fecha de Nacimiento del familiar : </div>
+                        <input type="date" id="fecha_f" max="2024-03-04" value ="2023-03-01">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Tipo de sangre del familiar : </div>
+                        <input type="text" id="tipo_f" placeholder="tipo de sangre">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Telefono del familiar : </div>
+                        <input type="text" id="telefono_f" placeholder="telefono">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Direccion del familiar : </div>
+                        <input type="text" id="direccion_f" placeholder="direccion">
+                    </div>
+
+                    <div class="campo">
+                        <button class="add-1 add">agregar</button>
+                    </div>
+                   
+                    <div class="campo button">
+                        <button class="atras-1 atras">Atras</button>
+                        <button class="siguiente-3 siguiente">Siguiente</button>
+                    </div>
+
+                </div>
+
+                <div class="pagina move">
+                    
+                    <div class="titulo">Condiciones Pre-Existentes de Salud</div>
+                    
+                    <div class="campo">
+                        <div class="label">Enfermedad : </div>
+                        <input type="text" id="enfermedad" placeholder="Enfermedad">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Tiempo con la enfermedad : </div>
+                        <input type="text" id="tiempo" placeholder="tiempo">
+                    </div>
+
+                    <div class="campo">
+                        <button class="add-2 add">agregar</button>
+                    </div>
+                    
+                    <div class="campo button">
+                        <button class="atras-2 atras">Atras</button>
+                        <button class="siguiente-4 siguiente">Siguiente</button>
+                    </div>
+
+                </div>
+
+                <div class="pagina move">
+                    
+                    <div class="titulo">Internamientos Realizados</div>
+                    
+                    <div class="campo">
+                        <div class="label">Fecha : </div>
+                        <input type="date" id="inter" placeholder="fehca de internado">
+                    </div>
+                    
+                    <div class="campo">
+                        <div class="label">Centro Medico : </div>
+                        <input type="text" id="centro" placeholder="centro medico">
+                    </div>
+
+                    <div class="campo">
+                        <div class="label">Diagnostico : </div>
+                        <input type="text" id="diag" placeholder="dialogo">
+                    </div>
+
+                    <div class="campo">
+                        <button class="add-3 add">agregar</button>
+                    </div>
+                    
+                    <div class="campo button">
+                        <button class="atras-3 atras">Atras</button>
+                        <button class="siguiente-5 guardar" id="siguiente4">Guardar</button>
+                    </div>
+
+                </div>
+
+                <div class="pagina move">
+                    
+                    <div class="titulo">Registro</div>
+
+                    <div class="row">
+                        <div class="column">
+                            <h2>Nombre : </h2>
+                            <p id="name_p">Some text..</p>
+                           <input type="text" id="nombre_e" placeholder="nombre"></input>";
+                          </div>
+                          <div class="column">
+                            <h2 >Primer Apellido : </h2>
+                            <p id="first_p">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Segundo apellido : </h2>
+                            <p id="second_p">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Sexo : </h2>
+                            <p id="sexo_p">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Edad : </h2>
+                            <p id="edad_p">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Fecha de Nacimiento : </h2>
+                            <p id="fecha_p">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Tipo de sangre : </h2>
+                            <p id="tipo_p">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Telefono : </h2>
+                            <p id="telefono_p">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Direccion : </h2>
+                            <p id="direccion_p">Some text..</p>
+                          </div>
+                        
+                      </div>
+                      
+                      <div class="row">
+                        <div class="column">
+                            <h2>Nombre del familiar : </h2>
+                            <p id="name_fp">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2 >Primer Apellido del familiar : </h2>
+                            <p id="first_fp">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Segundo apellido del familiar: </h2>
+                            <p id="second_fp">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>parentesco familiar : </h2>
+                            <p id="parestesco_fp">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Sexo del familiar : </h2>
+                            <p id="sexo_fp">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Edad del familiar : </h2>
+                            <p id="edad_fp">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Fecha de Nacimiento del familiar : </h2>
+                            <p id="fecha_fp">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Tipo de sangre del familiar : </h2>
+                            <p id="tipo_fp">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Telefono del familiar : </h2>
+                            <p id="telefono_fp">Some text..</p>
+                          </div>
+                          <div class="column">
+                            <h2>Direccion del familiar : </h2>
+                            <p id="direccion_fp">Some text..</p>
+                          </div>
+                        
+                      </div>
+                    
+                    <div class="campo button">
+                        <button class="atras-4 atras">Atras</button>
+                        <button class="editar">Editar</button>
+                        <button class="end guardar" id="end">Terminar</button>
+                    </div>
+                       
+                </div>
+
+            </form>
+
+        </div>
+    
+    </div>
+            
+     <script src="move.js"></script>
+     <script src="guardar.js"></script>
+
+    </body>

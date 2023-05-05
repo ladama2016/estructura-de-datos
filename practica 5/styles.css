@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration:none;
+}
+
+body
+{
+    background: #ffff;
+    
+}
+
+h1
+{
+    font-family: 'Open sans';
+    font-size: 60px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2
+{
+    font-family: 'Open sans';
+    font-size: 50px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h3
+{
+    font-family: 'Open sans';
+    font-size: 40px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h4
+{
+    font-family: 'Open sans';
+    font-size: 30px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+p
+{
+    font-family: 'Open sans';
+    font-size: 25px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.btn
+{
+    font-size: 25px;
+
+}
+
+img
+{
+    width: 100px;
+}
+
+.mini
+{
+    width: 2080px;
+    margin-bottom: 40px;
+    background: #4da5ff;
+    text-align: center;
+}
+
+.mini,.sub-mini0,.sub-mini2,.sub-mini3
+{
+    list-style:none;
+    text-decoration:none;
+}
+
+.menu-mini li
+{
+    position: relative;
+    display: inline-block;
+}
+
+.menu-mini > li
+{
+    display: relative;
+    padding: 20px 40px;
+    color: black;
+    font-family: 'Open sans';
+    font-size: 25px;
+    
+}
+
+.menu-mini li:hover
+{
+    color: gold;
+    transition: all .3s;
+    display:relative;
+
+}
+
+.sub-mini0,.sub-mini2,.sub-mini3
+{
+    position:  absolute;
+    font-family: 'Open sans';
+    font-size: 15px;
+    background-color: #007FFF;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.sub-mini0 li,.sub-mini2 li,.sub-mini3 li
+{
+    display: block;
+    
+    padding: 15px;
+    color: white;
+}
+
+.menu-mini li:hover .sub-mini0,.menu-mini li:hover .sub-mini2,.menu-mini li:hover .sub-mini3
+{
+    visibility: visible;
+    opacity: 2;
+    z-index: 100;
+}

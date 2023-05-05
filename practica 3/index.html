@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+    <title>pagina validacion de cedula</title>
+</head>
+
+<div id="datos">
+
+    <body>
+        <h1>Digito Verificador</h1>
+        <h2>introduce el numero de cedula para verificar si es correcto</h2>
+        
+        <form id="form_js">
+            <p><input type="text" class="text" name="cedula"  id="id" placeholder="Escribe tu numero de cedula aqui" size="20" autofocus ></p>
+            <p><input type="button" class="button" onclick="recibir()" value="Enviar"><input type="reset" value="Borrar" class="button"onclick="borrar()"/></p>
+            <p></p>
+            
+            <div id="respuesta" class="respuesta">
+            </div>
+</div>
+
+
+               
+</body>
+</html>
