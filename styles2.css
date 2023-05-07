@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family : 'Open sans';
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100VH;
+    background: #4da5ff;
+    background-position: center;
+}
+
+.cuadro
+{
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 35px 0 35px;
+}
+
+.cuadro header
+{
+    font-size: 40px;
+    font-weight: 600px;
+    margin:0 0 30px 0;
+}
+
+.cuadro .form
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+.form form 
+{
+    display: flex;
+    width: 400%;
+
+}
+
+.form form .pagina
+{
+    width:25%;
+}
+
+.form form .pagina .titulo
+{
+    text-align: left;
+    font-size: 35px;
+    font-weight: 500px;
+}
+
+
+.form form .pagina .campo
+{
+    height: 35px;
+    width: 400px;
+    margin: 40px 0;
+    display: flex;
+    position: relative;
+}
+
+
+.form form .pagina .campo .label
+{
+    position: absolute;
+    text-align: center;
+    top: -30px;
+    font-weight: 500;
+    font-size: 25px;
+    width: 100%;
+}
+
+.form form .pagina .campo input
+{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:  5px;
+}
+
+.form form .pagina .campo select
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: 500;
+    padding-left:15px;
+}
+
+.form form .pagina .campo button
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border: none;
+    background: #4da5ff;
+    border-radius: 7px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form form .pagina .campo button:hover
+{
+    background: gold;
+}
+
+.form form .pagina .campo .button button
+{
+    margin-top: -20px;
+}
+
+.form form .pagina .campo .button button.atras
+{
+    margin-right: 3px;
+    font-size: 17px;
+}
+
+
+.form form .pagina .campo .button button.siguiente
+{
+    margin-left: 3px; 
+}
+
+
+.form form .pagina .campo .button button.editar
+{
+    margin-left: 3px; 
+}
+
+
+.form form .pagina .campo .button button.end
+{
+    margin-left: 3px; 
+}
+
+.cuadro .bar
+{
+    display: flex;
+}
+
+.cuadro .bar .paso
+{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.bar .paso p
+{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+
+.bar .paso .num
+{
+    
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    
+}
+
+.bar .paso .num .span
+{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+}
+
+.bar .paso .check
+{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%,-50%);
+}
+
+.bar .paso .num::before,.bar .paso .num::after
+{
+    position: absolute;
+    content: "";
+    width: 44px;
+    height: 3px;
+    bottom: 11px;
+    right: -50px;
+    background: black;
+    
+}
+
+.bar .paso:last-child .num::before,
+.bar .paso:last-child .num::after
+{
+    display: none;
+}
+
+.bar .paso .num::after
+{
+    background-color: gold;
+    animation: linea 0.3s linear forwards;
+    transform: scaleX(0);
+}
+
+@keyframes linea 
+{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.column
+{
+    text-align: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row p
+{
+    position: relative;
+    left: 200px;
+}
